@@ -1,0 +1,9 @@
+<select [(ngModel)]="posSelected">
+  <option diabled="disabled" [value]="undefined">品詞を選ぶ</option>
+  <option value="{{ posType.noun }}">名詞</option>
+  <option value="{{ posType.verb }}">動詞</option>
+  <option value="{{ posType.adjective }}">形容詞</option>
+</select>
+<p>
+{{ word }}
+</p>

@@ -10,6 +10,7 @@ import { PartOfSpeech } from '../pos';
 export class WordSelectorComponent implements OnInit {
   word: string;
   randWord: RandomWord;
+  minLevel: number;
 
   _posSelected: PartOfSpeech;
   set posSelected(p:PartOfSpeech) {

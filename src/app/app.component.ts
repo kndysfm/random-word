@@ -1,4 +1,5 @@
 import { Component, VERSION } from '@angular/core';
+import { Options } from 'ng5-slider';
 
 @Component({
   selector: 'my-app',
@@ -6,5 +7,13 @@ import { Component, VERSION } from '@angular/core';
   styleUrls: [ './app.component.css' ]
 })
 export class AppComponent  {
-  name = 'Angular ' + VERSION.major;
+  minLevel: number = 0.5;
+  maxLevel: number = 2.5;
+  options: Options = {
+    floor: 0.0,
+    ceil: 4.0,
+    step: 0.1,
+    minRange: 0.1,
+    maxRange: 5.0
+  };
 }

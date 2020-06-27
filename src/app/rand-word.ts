@@ -46,8 +46,6 @@ export class RandomWord {
         break;
       }
     }
-    idxMin = 0;
-    idxMax = list.length;
     if (idxMin < idxMax) {
       var rand = Math.random();
       var idx = idxMin + Math.floor(rand * (idxMax - idxMin));
